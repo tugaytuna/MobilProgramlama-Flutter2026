@@ -1,0 +1,18 @@
+ADIM 0 : akjksdas
+ADIM 1: ajksjdsa,
+
+
+STEP 1: asdasd
+STEP 2: asdasd
+
+
+0: asdasd
+1: asdasd
+2: asdada
+
+BAŞLA
+(..)
+(..)
+BİTİR/SON
+
+Index 0'dan başlayarak sayma sayıları
