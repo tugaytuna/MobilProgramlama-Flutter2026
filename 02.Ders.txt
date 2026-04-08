@@ -1,0 +1,47 @@
+void main(){
+  print('Merhaba Dünya!');
+  print("Tugay Tuna");
+  
+  print("25");
+  print(25);
+  
+  print("25+10");
+  print(25+10);
+  
+  // Tırnak içinde yazılanlar metin olarak kabul edilir, sayı yazılsa bile.
+  // print(yirmi + on);
+  
+  // Değişken tipi + degisken ismi + = + değer
+  String nickname = "Tugay";
+  String yazi1 = "Örnek yazıdır!";
+  String stringSayi = "24";
+  
+  print("nickname");
+  print(nickname);
+  print(stringSayi);
+  
+  // Değişken tipi + degisken ismi + = + değer
+  int yas = 18;
+  int sayi1 = 50;
+  
+  print(yas + 20);
+  print(yas * sayi1);
+  
+  // Değişken tipi + degisken ismi + = + değer
+  double fiyat = 2.5;
+  print(fiyat * 50);
+  
+  // Değişken tipi + degisken ismi + = + değer
+  // true = doğru
+  // false = yanlış
+  bool adminMi = true;
+  
+  print(nickname);
+  nickname = "Tuna";
+  print(nickname);
+  
+  
+  
+}
+
+
