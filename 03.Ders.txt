@@ -1,0 +1,55 @@
+void main() {
+  String isim = "Tugay";
+  String soyisim = "Tuna";
+  int yas = 25;
+  bool adminMi = true;
+
+  String kullanici1 = "Can";
+  String kullanici2 = "Ferhat";
+
+  String girilenIsim = "Can";
+
+  print(isim + " " + soyisim);
+
+  // Mantıksal Operatörler
+  
+  // && VE AND
+  // TRUE && TRUE => TRUE
+  // TRUE && FALSE => FALSE
+  // FALSE && TRUE => FALSE
+  // FALSE && FALSE => FALSE
+  
+  // || VEYA OR
+  // TRUE || TRUE => TRUE
+  // TRUE || FALSE => TRUE
+  // FALSE || TRUE => TRUE
+  // FALSE || FALSE => FALSE
+  
+    
+  if (kullanici1 == girilenIsim || kullanici2 == girilenIsim) {
+    print("Admin hoş geldin!");
+  } else {
+    print("Misafir kullanıcı hoşgeldin.");
+  }
+  
+  if (girilenIsim == kullanici1 && yas >= 18 ){
+    print("giriş yapabilirsiniz - yas ve isim doğru!");
+  }else{
+    print("hatalı kullanıcı!");
+  }
+  
+
+  if (yas >= 18) {
+    print("Giriş yapabilirsiniz");
+  } else {
+    print("18 yaşından küçüksünüz!");
+  }
+  
+  
+  if(adminMi){
+    print("Admin");
+  }else {
+    print("Kullanıcı");
+  }
+  
+}
