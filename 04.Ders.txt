@@ -1,0 +1,60 @@
+void main() {
+  String name = "Ahmet";
+  String surname = "Tuna";
+  
+  int sayi1 = 25;
+  int sayi2 = 10;
+  
+  String user1 = "Tugay";
+  String user2 = "İbrahim";
+  
+  if(name == user1 || name == user2){
+    print(name + " hoşgeldiniz");
+    //print("Kullanıcı hoş geldin");
+  }else{
+    print("Misafir hoş geldin");
+  }
+  
+  
+  // FOR Döngüsü
+  // Değişken oluşturma ; koşul ifadesi ; koşul bozacak ifade (artırma-azalma gibi)
+  for(int i = 1; i <= 10; i++){
+    print(i);
+  } 
+  
+  print("------------------------------------");
+  
+  // 1'den 10'a kadar olan sayıların toplamı
+  int toplam = 0;
+  for(int sayi1 = 1; sayi1 < 10; sayi1++){
+    //toplam = toplam + sayi1;
+    toplam += sayi1;
+  }
+  
+  
+  print(toplam);
+  
+  
+  
+  print("-------------------------");
+  
+  // 1'den 10 kadar olan çift sayıların toplamı
+  
+  int ciftSayilarToplam = 0;
+  for(int x = 1; x < 10; x++){
+    if(x % 2 == 0){
+       ciftSayilarToplam += x;
+    }
+  }
+  
+  print(ciftSayilarToplam);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
