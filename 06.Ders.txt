@@ -1,0 +1,36 @@
+void main() {
+  String isim = "İsmail";
+
+  void selamVer(String kullaniciAdi, bool uzun) {
+    print("Merhaba $kullaniciAdi!");
+
+    if (uzun) {
+      print("Uygulamaya hoş geldin!");
+      print("Uygulamayı hem IOS hem de Android platformunda kullanabilirsin.");
+      print("Umarım uygulamayı beğenmişsindir.");
+      print("Bizi appstore veya playstore üzerinden değerlendirmeyi unutma!");
+    }
+  }
+
+  selamVer("Tuna", true);
+
+  void topla(int sayi1, int sayi2) {
+    //int toplam = sayi1 + sayi2;
+    //print("İşlemin sonucu: $toplam");
+    print("İşlemin sonucu: ${sayi1 + sayi2}");
+  }
+
+  topla(50, 40);
+
+  topla(123, 45);
+
+  if (isim == "tugay") {
+    print("hoş geldin admin");
+  } else if (isim == "ahmet") {
+    print("hoş geldin web developer");
+  } else {
+    selamVer(isim, false);
+  }
+
+  selamVer("Tugay", false);
+}
