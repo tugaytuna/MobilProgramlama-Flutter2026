@@ -1,0 +1,49 @@
+void main() {
+  String isim = "Tugay";
+
+  void selamVer([String ad = "", bool yeniKullanici = false]) {
+    print("Hoş geldiniz $ad");
+
+    if (yeniKullanici) {
+      print("Uygulamaya yeni katıldığınızı fark ettik.");
+      print("Daha fazla bilgi için .... adresine gidebilirsiniz.");
+    }
+  }
+
+  selamVer("Ahmet");
+
+  selamVer(isim, true);
+
+  selamVer();
+
+  int sayi1 = 24;
+  int sayi2 = 45;
+
+  int toplam = 0;
+
+  int topla(int a, int b) {
+    return (a + b);
+  }
+
+  print(topla(sayi1, sayi2));
+
+  toplam = topla(24, 14);
+  print(toplam);
+
+  String karsilamaMesaji(String ad) {
+    if (ad.toUpperCase() == "TUGAY") {
+      return "admin";
+    } else {
+      String adDuzenlenmis = ad.toUpperCase();
+      String text = "Merhaba $adDuzenlenmis";
+      return text;
+    }
+  }
+
+  print(karsilamaMesaji("tugay"));
+
+  print(karsilamaMesaji("tUnA"));
+  
+  print(karsilamaMesaji("tacettin"));
+  
+}
