@@ -1,0 +1,75 @@
+void main() {
+  String isim = "tUGay";
+
+  String metinDuzenle(String metin) {
+    String duzenlenmis = metin.toUpperCase();
+    return duzenlenmis;
+  }
+
+  print(metinDuzenle("test"));
+
+  if (metinDuzenle(isim) == "TUGAY") {
+    print("isim = tugay");
+  } else {
+    print("isim eşit değil");
+  }
+
+  //var sayilar2 = <int>[];
+  
+  List<int> sayilar = [1, 10, 53, 45, 76];
+  List<String> adminler = ["tacettin","ahmet","selçuk"];
+
+  print(adminler);
+  print(sayilar);
+  
+  // index numarasına göre bir elemanı yazdırma
+  print(adminler[1]);
+  
+  // bir tane eleman ekleme
+  adminler.add("tugay");
+  
+  print(adminler);
+  
+  // birden fazla eleman ekleme
+  sayilar.addAll([7,8,9]);
+
+  print(sayilar);
+  
+  // index numarasına göre değerini güncelleme
+  sayilar[4] = 55;
+  
+  print(sayilar);
+  
+  
+  // tam değerinde silme
+  sayilar.remove(8);
+   print(sayilar);
+   
+  // index numarasına göre eleman silme
+  sayilar.removeAt(0);
+     print(sayilar);
+  
+  
+  // eleman sayısını bulma
+  print(sayilar.length);
+  
+  
+  // ilk elemanı bulma
+  print(sayilar[0]);
+  print(sayilar.first);
+  
+  // son elemanı bulma
+  print(sayilar[sayilar.length - 1]);
+  print(sayilar.last);
+  
+  // liste boş mu?
+  print(sayilar.isEmpty);
+  
+  // liste dolu mu?
+  print(sayilar.isNotEmpty);
+  
+  
+  
+  
+  
+}
