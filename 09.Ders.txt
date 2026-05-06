@@ -1,0 +1,93 @@
+void main() {
+  // String - metinsel değer
+  String kullaniciadi = "tugay";
+  // int - tam sayısal değer
+  int sayi1 = 12;
+  int sayi2 = 22;
+  // double - ondalık sayılar
+  double sayi3 = 10.4;
+  // bool - mantıksal - true - false
+  bool ogrenciMi = true;
+  // var - herhangi bir değişken tipi
+  var isim = "Tuna";
+  var rakam = 12;
+
+  print(kullaniciadi);
+
+  // toplama işlemi
+  print(sayi1 + 50);
+  // çıkarma işlemi
+  print(sayi1 - sayi2);
+  // çarpma işlemi
+  print(sayi2 * 2);
+  // bölme işlemi
+  print(sayi3 / 4);
+
+  print(ogrenciMi);
+
+  int sayi4 = 12;
+
+  if (sayi4 > 15) {
+    print("sayı 15'ten büyüktür");
+  } else if (sayi4 >= 10) {
+    print("sayı 10 ile 15 arasında");
+  } else {
+    print("sayı 10'dan küçüktür");
+  }
+
+  // degisken tanımla
+  // koşul ifade
+  // koşulu bozacak işlem (arttırma, eksiltme)
+  for (int i = 1; i <= 5; i++) {
+    print(i);
+  }
+
+  // while döngüsü
+  int sayi5 = 1;
+  while (sayi5 <= 5) {
+    print("tugay");
+    sayi5++;
+  }
+
+  // fonksiyonlar
+  // fonksiyonu oluşturmak
+  void selamVer(String ad) {
+    print("Merhaba $ad!");
+  }
+
+  // fonksiyonu çağırmak
+  selamVer("tugay");
+
+  void islem1(int sayi, bool karesi) {
+    if (karesi) {
+      print("$sayi sayısının karesi: ${sayi * sayi}");
+    } else {
+      print("$sayi sayısının 2 katı: ${sayi * 2}");
+    }
+  }
+
+  islem1(10, true);
+  islem1(22, false);
+  islem1(35, true);
+
+  // geriye değer döndüren fonksiyon
+  int toplama(int a, int b) {
+    return a + b;
+  }
+
+  int sonuc = toplama(5, 10);
+  print(sonuc);
+
+  String karsilama(String isim) {
+    isim = isim.toUpperCase();
+    return isim;
+  }
+
+  void selamVerGelismis(String ad) {
+    ad = karsilama(ad);
+    print("Merhaba $ad!");
+  }
+  
+  selamVerGelismis("tugay");
+  
+}
