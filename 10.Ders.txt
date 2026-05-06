@@ -1,0 +1,64 @@
+void main() {
+  List<int> sayilar = [1, 10, 53, 45, 76, 22, 19];
+  List<String> adminler = ["tacettin", "ahmet", "selçuk", "ibrahim", "ismail"];
+
+  print(adminler);
+  print(sayilar);
+
+  // liste içinde arama
+  print(sayilar.contains(20));
+
+  // listeyi sıralama - küçükten büyüğe doğru
+  sayilar.sort();
+  print(sayilar);
+  // listeyi a'dan z'ye sıralama
+  //adminler.sort();
+  //print(adminler);
+
+  var adminlerTers = adminler.reversed;
+  print(adminlerTers);
+
+  var sayilarTers = sayilar.reversed;
+  print(sayilarTers);
+
+  List<int> numbers = [];
+
+  for (int i = 1; i <= 10; i++) {
+    numbers.add(i);
+  }
+
+  print(numbers);
+
+  for (int i = 0; i < 10; i++) {
+    numbers[i] = numbers[i] * numbers[i];
+  }
+
+  print(numbers);
+
+  List<int> notlar = [67, 83, 78];
+
+  int toplam = 0;
+
+  // foreach
+  // dizinin içindeki eleman sayısı
+  // istediğimiz isim (değişken oluşturmak gibi)
+  // in
+  // dizinin adı
+  for (int not in notlar) {
+    toplam += not;
+  }
+
+  print(toplam / notlar.length);
+
+  void ortalamaYazdir() {
+    // ödev
+    // parametre olarak liste almalı
+    // aldığı listeyi for ile toplayıp eleman sayısına bölüp ortalamayı döndürmeli
+    // ortalama 60'dan yüksek ise 'Ortalamanı: ... Tebrikler geçtiniz' desin, düşük ise ona göre bir metin gelsin.
+  }
+  
+  
+  
+  
+  
+}
