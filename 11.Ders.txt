@@ -1,0 +1,55 @@
+void main() {
+  int toplam = 0;
+
+  void ortalamaYazdir(List<int> liste1) {
+    for (int i = 0; i < liste1.length; i++) {
+      toplam += liste1[i];
+    }
+
+    double ortalama = toplam / liste1.length;
+
+    if (ortalama >= 60) {
+      print("Ortalaman: $ortalama - Tebrikler geçtiniz!");
+    } else {
+      print("Ortalaman: $ortalama - Kaldınız...");
+    }
+  }
+
+  List<int> sayilar1 = [55, 68, 91, 42];
+  List<int> sayilar2 = [49, 55, 37, 89];
+
+  List<int> sayilar3 = [50, 60, 70, 50, 70, 90];
+
+  ortalamaYazdir(sayilar3);
+
+  // int, double, string, bool ....
+  // List<int> , .........
+
+  Map ogrenci = {
+    "ad": "Tugay",
+    "soyad": "Tuna",
+    "ogrenciNo": 196,
+    "ogrenciMi": false,
+    "sinifi": 11,
+  };
+
+  print(ogrenci);
+
+  print(ogrenci["ogrenciNo"]);
+
+  ogrenci["sinifi"] = 12;
+
+  print(ogrenci);
+
+  // foreach
+  // dizinin içindeki eleman tipi
+  // istediğimiz isim (değişken oluşturmak gibi)
+  // in
+  // dizinin adı
+
+  for (var deger in ogrenci.values) {
+    print(deger);
+  }
+
+  // map listesi - liste içinde map
+}
