@@ -21,7 +21,7 @@ void main() {
   var sayilarTers = sayilar.reversed;
   print(sayilarTers);
 
-  List<int> numbers = [];
+  List<int> numbers = [0];
 
   for (int i = 1; i <= 10; i++) {
     numbers.add(i);
@@ -29,18 +29,18 @@ void main() {
 
   print(numbers);
 
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < numbers.length; i++) {
     numbers[i] = numbers[i] * numbers[i];
   }
 
   print(numbers);
 
-  List<int> notlar = [67, 83, 78];
+  List<int> notlar = [67, 83, 78, 45, 56];
 
   int toplam = 0;
 
   // foreach
-  // dizinin içindeki eleman sayısı
+  // dizinin içindeki eleman tipi
   // istediğimiz isim (değişken oluşturmak gibi)
   // in
   // dizinin adı
@@ -54,11 +54,8 @@ void main() {
     // ödev
     // parametre olarak liste almalı
     // aldığı listeyi for ile toplayıp eleman sayısına bölüp ortalamayı döndürmeli
-    // ortalama 60'dan yüksek ise 'Ortalamanı: ... Tebrikler geçtiniz' desin, düşük ise ona göre bir metin gelsin.
+    // ortalama 60'dan yüksek ise 'Ortalaman: ... Tebrikler geçtiniz' desin, düşük ise ona göre bir metin gelsin.
   }
-  
-  
-  
   
   
 }
