@@ -1,0 +1,77 @@
+void main() {
+  Map ogrenci = {
+    "ad": "Tugay",
+    "soyad": "Tuna",
+    "ogrenciNo": 196,
+    "ogrenciMi": false,
+    "sinifi": 11,
+    "notlar": [48, 49, 32],
+  };
+
+  // foreach
+  // dizinin içindeki eleman tipi
+  // istediğimiz isim (değişken oluşturmak gibi)
+  // in
+  // dizinin adı
+
+  for (var deger in ogrenci.keys) {
+    print(deger);
+  }
+
+  ogrenci.forEach((key, value) {
+    print("$key : $value");
+  });
+
+  // map listesi - liste içinde map
+  List<int> sayilar = [213, 123, 458];
+  print(sayilar);
+
+  List<Map> ogrenciler = [
+    {
+      "ad": "Ahmet",
+      "soyad": "Osman",
+      "ogrenciNo": "111",
+      "ogrenciMi": true,
+      "sinifi": 12,
+      "notlar": [79, 86, 77],
+    },
+    {
+      "ad": "İsmail",
+      "soyad": "Adıgüzel",
+      "ogrenciNo": "148",
+      "ogrenciMi": true,
+      "sinifi": 9,
+      "notlar": [45, 72, 95],
+    },
+    ogrenci,
+  ];
+
+  // for(int i = 0; i < ogrenciler.length; i++){
+  //   print(ogrenciler[i]);
+  // }
+
+  double ortalamaHesapla(List<int> notlar) {
+    int toplam = 0;
+    for (int not in notlar) {
+      toplam += not;
+    }
+    double ortalama = toplam / notlar.length;
+    return ortalama;
+  }
+
+  for (Map eleman in ogrenciler) {
+    //print(eleman["notlar"]);
+    double ort = ortalamaHesapla(eleman["notlar"]);
+    
+    if(ort >= 50){
+      print("${eleman["ad"]} isimli öğrencinin not ortalaması: $ort");
+    }
+    
+    
+  }
+
+  // listedeki tüm öğrencilerin not ortalamalarını görmek istiyorum
+  // sadece sınavadan geçen (50'den yüksek) öğrencilerim isimlerini görmek
+
+  // print(ogrenciler[2]);
+}
