@@ -1,0 +1,112 @@
+void main() {
+  List<Map> ogrenciler = [
+    {
+      "ad": "Ahmet",
+      "soyad": "Osman",
+      "ogrenciNo": "111",
+      "ogrenciMi": true,
+      "sinifi": 12,
+      "notlar": [79, 86, 77],
+    },
+    {
+      "ad": "İsmail",
+      "soyad": "Adıgüzel",
+      "ogrenciNo": "148",
+      "ogrenciMi": true,
+      "sinifi": 9,
+      "notlar": [45, 72, 95],
+    },
+    {
+      "ad": "Tugay",
+      "soyad": "Tuna",
+      "ogrenciNo": 196,
+      "ogrenciMi": false,
+      "sinifi": 11,
+      "notlar": [48, 49, 32],
+    },
+    {
+      "ad": "Mert",
+      "soyad": "Yıldız",
+      "ogrenciNo": 198,
+      "ogrenciMi": true,
+      "sinifi": 12,
+      "notlar": [65, 58, 73],
+    },
+    {
+      "ad": "Elif",
+      "soyad": "Demir",
+      "ogrenciNo": 199,
+      "ogrenciMi": false,
+      "sinifi": 9,
+      "notlar": [88, 92, 79],
+    },
+  ];
+
+  List<String> harfnotuceviri(List<int> notlarSayi) {
+    List<String> harfnotu = [];
+
+    for (int not in notlarSayi) {
+      switch (not) {
+        case > 91 && <= 100:
+          harfnotu.add("A");
+
+        case > 88 && <= 91:
+          harfnotu.add("A-");
+        //print("A-");
+
+        case > 84 && <= 88:
+          harfnotu.add("B+");
+
+        case > 81 && <= 84:
+          harfnotu.add("B");
+
+        case > 77 && <= 81:
+          harfnotu.add("B-");
+
+        case > 74 && <= 77:
+          harfnotu.add("C+");
+
+        case > 70 && <= 74:
+          harfnotu.add("C");
+
+        case > 67 && <= 70:
+          harfnotu.add("C-");
+
+        case > 64 && <= 67:
+          harfnotu.add("D");
+
+        case > 0 && <= 64:
+          harfnotu.add("F");
+
+        default:
+          harfnotu.add("X");
+      }
+    }
+
+    return harfnotu;
+    //print(harfnotu);
+  }
+
+  harfnotuceviri([78, 88, 55, 95]);
+
+  double ortalamaHesapla(List<int> notlar) {
+    int toplam = 0;
+    for (int not in notlar) {
+      toplam += not;
+    }
+    double ortalama = toplam / notlar.length;
+    return ortalama;
+  }
+
+  for (Map eleman in ogrenciler) {
+    //print(eleman["notlar"]);
+    double ort = ortalamaHesapla(eleman["notlar"]);
+
+    if (ort >= 50) {
+      print("${eleman["ad"]} isimli öğrencinin not ortalaması: $ort");
+
+      print("Not ortalaması harf notu: ${harfnotuceviri([ort.toInt()])}");
+      print(harfnotuceviri(eleman["notlar"]));
+    }
+  }
+}
