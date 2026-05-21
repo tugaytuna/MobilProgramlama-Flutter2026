@@ -1,0 +1,137 @@
+void main() {
+  int degisken1 = 121;
+  List<int> degisken2 = [12, 12, 455];
+
+  Map degisken3 = {"sayi": 524, "ad": "tugay", "ogrenci": true};
+  List<Map> degisken4 = [
+    {"sayi": 524, "ad": "tugay"},
+    {"sayi": 524, "ad": "tugay"},
+    {"sayi": 524, "ad": "tugay"},
+  ];
+
+  //print(degisken1);
+  //print(degisken2);
+  //print(degisken3);
+  //print(degisken4);
+
+  Map urun1 = {
+    "urunAdi": "Cep Telefonu",
+    "fiyatı": 15000,
+    "kategori": "Telefon",
+    "sifir": true,
+    "model": 2024,
+    "isletimSistemi": "Android",
+    "kapasite": ["64GB", "128GB", "256GB"],
+  };
+
+  List<Map> urunler = [
+    {
+      "urunAdi": "Oppo 5",
+      "fiyati": 15000,
+      "kategori": "Telefon",
+      "sifir": true,
+      "model": 2024,
+      "isletimSistemi": "Android",
+      "kapasite": ["64GB", "128GB", "256GB"],
+    },
+    {
+      "urunAdi": "iPhone 15",
+      "fiyati": 52000,
+      "kategori": "Telefon",
+      "sifir": true,
+      "model": 2024,
+      "isletimSistemi": "iOS",
+      "kapasite": ["128GB", "256GB", "512GB"],
+    },
+    {
+      "urunAdi": "Samsung Galaxy S24",
+      "fiyati": 43000,
+      "kategori": "Telefon",
+      "sifir": false,
+      "model": 2024,
+      "isletimSistemi": "Android",
+      "kapasite": ["128GB", "256GB"],
+    },
+    {
+      "urunAdi": "Xiaomi Redmi Note 13",
+      "fiyati": 18000,
+      "kategori": "Telefon",
+      "sifir": true,
+      "model": 2023,
+      "isletimSistemi": "Android",
+      "kapasite": ["128GB", "256GB"],
+    },
+    {
+      "urunAdi": "Huawei P60",
+      "fiyati": 27000,
+      "kategori": "Telefon",
+      "sifir": false,
+      "model": 2022,
+      "isletimSistemi": "HarmonyOS",
+      "kapasite": ["128GB", "256GB"],
+    },
+    {
+      "urunAdi": "Oppo Reno 11",
+      "fiyati": 22000,
+      "kategori": "Telefon",
+      "sifir": true,
+      "model": 2024,
+      "isletimSistemi": "Android",
+      "kapasite": ["256GB"],
+    },
+    {
+      "urunAdi": "Vivo V30",
+      "fiyati": 21000,
+      "kategori": "Telefon",
+      "sifir": true,
+      "model": 2024,
+      "isletimSistemi": "Android",
+      "kapasite": ["128GB", "256GB"],
+    },
+    {
+      "urunAdi": "Google Pixel 8",
+      "fiyati": 35000,
+      "kategori": "Telefon",
+      "sifir": true,
+      "model": 2024,
+      "isletimSistemi": "Android",
+      "kapasite": ["128GB", "256GB"],
+    },
+    {
+      "urunAdi": "OnePlus 12",
+      "fiyati": 32000,
+      "kategori": "Telefon",
+      "sifir": false,
+      "model": 2023,
+      "isletimSistemi": "Android",
+      "kapasite": ["256GB", "512GB"],
+    },
+    {
+      "urunAdi": "Realme GT 6",
+      "fiyati": 19000,
+      "kategori": "Telefon",
+      "sifir": false,
+      "model": 2024,
+      "isletimSistemi": "Android",
+      "kapasite": ["128GB", "256GB"],
+    },
+  ];
+
+  int sayac = 0;
+  for (Map urun in urunler) {
+    if (urun["kapasite"].contains("512GB") && urun["sifir"]) {
+      print("${urun["urunAdi"]} - ${urun["fiyati"]} TL");
+      sayac++;
+    }
+  }
+  print("$sayac tane urun bulundu!");
+  
+  
+  
+  urunler.sort((a, b) => a["fiyati"].compareTo(b["fiyati"]));
+  
+  for(Map urun in urunler){
+    print("${urun["urunAdi"]}  ${urun["fiyati"]} TL");
+  }
+  
+}
