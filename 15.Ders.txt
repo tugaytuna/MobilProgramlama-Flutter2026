@@ -1,0 +1,305 @@
+void main() {
+  List<Map> kitaplik = [
+    {
+      "kitapId": 1,
+      "kitapAdi": "Suç ve Ceza",
+      "yazar": "Fyodor Dostoyevski",
+      "yayinevi": "İş Bankası Kültür Yayınları",
+      "kategori": ["Roman", "Klasik", "Psikolojik"],
+      "sayfa": 456,
+      "ilkYayinYili": 1866,
+      "puan": 4.8,
+      "fiyat": 189.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 2,
+      "kitapAdi": "Sefiller",
+      "yazar": "Victor Hugo",
+      "yayinevi": "Can Yayınları",
+      "kategori": ["Roman", "Klasik", "Dram"],
+      "sayfa": 1488,
+      "ilkYayinYili": 1862,
+      "puan": 4.9,
+      "fiyat": 249.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 3,
+      "kitapAdi": "1984",
+      "yazar": "George Orwell",
+      "yayinevi": "Can Yayınları",
+      "kategori": ["Distopya", "Bilim Kurgu", "Klasik"],
+      "sayfa": 352,
+      "ilkYayinYili": 1949,
+      "puan": 4.7,
+      "fiyat": 159.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 4,
+      "kitapAdi": "Hayvan Çiftliği",
+      "yazar": "George Orwell",
+      "yayinevi": "Can Yayınları",
+      "kategori": ["Politik", "Klasik", "Roman"],
+      "sayfa": 152,
+      "ilkYayinYili": 1945,
+      "puan": 4.6,
+      "fiyat": 99.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 5,
+      "kitapAdi": "Kürk Mantolu Madonna",
+      "yazar": "Sabahattin Ali",
+      "yayinevi": "Yapı Kredi Yayınları",
+      "kategori": ["Roman", "Türk Edebiyatı", "Aşk"],
+      "sayfa": 160,
+      "ilkYayinYili": 1943,
+      "puan": 4.8,
+      "fiyat": 119.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 6,
+      "kitapAdi": "Simyacı",
+      "yazar": "Paulo Coelho",
+      "yayinevi": "Can Yayınları",
+      "kategori": ["Roman", "Kişisel Gelişim", "Macera"],
+      "sayfa": 184,
+      "ilkYayinYili": 1988,
+      "puan": 4.5,
+      "fiyat": 129.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 7,
+      "kitapAdi": "Beyaz Diş",
+      "yazar": "Jack London",
+      "yayinevi": "İş Bankası Kültür Yayınları",
+      "kategori": ["Macera", "Klasik", "Roman"],
+      "sayfa": 280,
+      "ilkYayinYili": 1906,
+      "puan": 4.4,
+      "fiyat": 109.90,
+      "okunduMu": true,
+      "stok": false,
+    },
+    {
+      "kitapId": 8,
+      "kitapAdi": "Dönüşüm",
+      "yazar": "Franz Kafka",
+      "yayinevi": "Can Yayınları",
+      "kategori": ["Modern Klasik", "Psikolojik", "Roman"],
+      "sayfa": 128,
+      "ilkYayinYili": 1915,
+      "puan": 4.3,
+      "fiyat": 89.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 9,
+      "kitapAdi": "Satranç",
+      "yazar": "Stefan Zweig",
+      "yayinevi": "İş Bankası Kültür Yayınları",
+      "kategori": ["Psikolojik", "Novella", "Klasik"],
+      "sayfa": 96,
+      "ilkYayinYili": 1942,
+      "puan": 4.6,
+      "fiyat": 79.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 10,
+      "kitapAdi": "İnsan Ne ile Yaşar?",
+      "yazar": "Lev Tolstoy",
+      "yayinevi": "Koridor Yayıncılık",
+      "kategori": ["Klasik", "Felsefi", "Hikaye"],
+      "sayfa": 96,
+      "ilkYayinYili": 1885,
+      "puan": 4.7,
+      "fiyat": 69.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 11,
+      "kitapAdi": "Tutunamayanlar",
+      "yazar": "Oğuz Atay",
+      "yayinevi": "İletişim Yayınları",
+      "kategori": ["Roman", "Modern Türk Edebiyatı"],
+      "sayfa": 724,
+      "ilkYayinYili": 1971,
+      "puan": 4.8,
+      "fiyat": 239.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 12,
+      "kitapAdi": "Yeraltından Notlar",
+      "yazar": "Fyodor Dostoyevski",
+      "yayinevi": "Türkiye İş Bankası Kültür Yayınları",
+      "kategori": ["Psikolojik", "Klasik", "Roman"],
+      "sayfa": 168,
+      "ilkYayinYili": 1864,
+      "puan": 4.5,
+      "fiyat": 99.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 13,
+      "kitapAdi": "Küçük Prens",
+      "yazar": "Antoine de Saint-Exupéry",
+      "yayinevi": "Can Çocuk Yayınları",
+      "kategori": ["Çocuk", "Klasik", "Felsefi"],
+      "sayfa": 112,
+      "ilkYayinYili": 1943,
+      "puan": 4.9,
+      "fiyat": 89.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 14,
+      "kitapAdi": "Fareler ve İnsanlar",
+      "yazar": "John Steinbeck",
+      "yayinevi": "Sel Yayıncılık",
+      "kategori": ["Roman", "Dram", "Klasik"],
+      "sayfa": 128,
+      "ilkYayinYili": 1937,
+      "puan": 4.6,
+      "fiyat": 109.90,
+      "okunduMu": false,
+      "stok": false,
+    },
+    {
+      "kitapId": 15,
+      "kitapAdi": "Şeker Portakalı",
+      "yazar": "José Mauro de Vasconcelos",
+      "yayinevi": "Can Yayınları",
+      "kategori": ["Roman", "Dram", "Çocuk"],
+      "sayfa": 182,
+      "ilkYayinYili": 1968,
+      "puan": 4.8,
+      "fiyat": 119.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 16,
+      "kitapAdi": "Cesur Yeni Dünya",
+      "yazar": "Aldous Huxley",
+      "yayinevi": "İthaki Yayınları",
+      "kategori": ["Distopya", "Bilim Kurgu"],
+      "sayfa": 272,
+      "ilkYayinYili": 1932,
+      "puan": 4.4,
+      "fiyat": 149.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 17,
+      "kitapAdi": "Yabancı",
+      "yazar": "Albert Camus",
+      "yayinevi": "Can Yayınları",
+      "kategori": ["Felsefi", "Roman", "Klasik"],
+      "sayfa": 136,
+      "ilkYayinYili": 1942,
+      "puan": 4.5,
+      "fiyat": 99.90,
+      "okunduMu": true,
+      "stok": true,
+    },
+    {
+      "kitapId": 18,
+      "kitapAdi": "Martin Eden",
+      "yazar": "Jack London",
+      "yayinevi": "İş Bankası Kültür Yayınları",
+      "kategori": ["Roman", "Klasik"],
+      "sayfa": 496,
+      "ilkYayinYili": 1909,
+      "puan": 4.7,
+      "fiyat": 179.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 19,
+      "kitapAdi": "Anna Karenina",
+      "yazar": "Lev Tolstoy",
+      "yayinevi": "İletişim Yayınları",
+      "kategori": ["Roman", "Klasik", "Dram"],
+      "sayfa": 1024,
+      "ilkYayinYili": 1878,
+      "puan": 4.8,
+      "fiyat": 289.90,
+      "okunduMu": false,
+      "stok": true,
+    },
+    {
+      "kitapId": 20,
+      "kitapAdi": "Don Kişot",
+      "yazar": "Miguel de Cervantes",
+      "yayinevi": "Yapı Kredi Yayınları",
+      "kategori": ["Macera", "Klasik", "Roman"],
+      "sayfa": 960,
+      "ilkYayinYili": 1605,
+      "puan": 4.6,
+      "fiyat": 269.90,
+      "okunduMu": true,
+      "stok": false,
+    },
+  ];
+
+  //print(kitaplik[0]["kitapAdi"]);
+
+  List<String> kitapIsimleri = [];
+
+  for (Map kitap in kitaplik) {
+    kitapIsimleri.add(kitap["kitapAdi"]);
+    //print(kitap["kitapAdi"]);
+  }
+
+  kitapIsimleri.sort();
+  print(kitapIsimleri);
+
+  print("---------");
+
+  kitaplik.sort((a, b) => a["ilkYayinYili"].compareTo(b["ilkYayinYili"]));
+
+  print(kitaplik[0]);
+ 
+  
+  //kitaplik[0]["okunduMu"] = true;
+ 
+  //for(Map kitap in kitaplik){
+  //  if(kitap["kitapAdi"] == "Suç ve Ceza"){
+  //    kitap["okunduMu"] = true;
+  //  }
+  // }
+  
+  int indexK =  kitaplik.indexWhere((a) => a["kitapAdi"] == "Martin Eden");
+  kitaplik[indexK]["okunduMu"] = true;
+  
+  for (Map kitap in kitaplik) {
+    if (kitap["stok"] && !kitap["okunduMu"]) {
+      print("-");
+      print("Kitap Adı: ${kitap["kitapAdi"]}");
+      print("Basım Yılı: ${kitap["ilkYayinYili"]}");
+      print("-");
+    }
+  }
+
+  print("---------");
+}
