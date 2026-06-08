@@ -1,0 +1,122 @@
+void main() {
+  print("Merhaba Dünya");
+
+  String degisken1 = "Tugay";
+  int degisken2 = 12;
+  bool degisken3 = true;
+  double degisken4 = 1.5;
+
+  print(degisken1);
+  print(degisken2 + 10);
+  print(degisken3);
+  print(degisken4);
+
+  degisken2 = 5 * 7;
+  print(degisken2);
+
+  degisken2 -= 10;
+
+  if (degisken2 > 50) {
+    //true
+    print("50'den büyüktür!");
+  } else if (degisken2 < 0) {
+    print("Negatif sayıdır!");
+  } else {
+    //false
+    print("50'den küçüktür!");
+  }
+
+  String gun = "Pazar";
+
+  switch (gun) {
+    case "Pazartesi":
+      // işlemler
+      print("Haftanın ilk günü");
+      break;
+    case "Salı":
+      // işlemler
+      print("Salı sallanır!");
+      break;
+    case "Cumartesi":
+      // işlemler
+      print("Haftasonu tatili");
+      break;
+    case "Pazar":
+      // işlemler
+      print("Yarın iş var");
+      break;
+
+    default:
+      print("Uygun gün bulunamadı!");
+      break;
+  }
+
+  // degisken oluşturma ; koşul ifadesi, degisken değer ekleme/cıkarma
+  for (int a = 1; a < 10; a++) {
+    print(a);
+  }
+
+  int b = 1;
+  while (b < 10) {
+    print(b);
+    b++;
+  }
+
+  int c = 1;
+  do {
+    print(c);
+    c++;
+  } while (c > 10);
+
+  void merhaba([String isim = "misafir kullanıcı"]) {
+    print("merhaba dünya! $isim");
+  }
+
+  merhaba("tugay");
+  merhaba("tuna");
+  merhaba();
+
+  int topla(int a, int b) {
+    int sonuc = a + b;
+    return sonuc;
+  }
+
+  print(topla(5, 10));
+
+  List<String> adminler = ["tugay", "tuna"];
+  print(adminler);
+
+  adminler.add("ahmet");
+
+  //print(adminler[0]);
+  //print(adminler[1]);
+
+  for (String admin in adminler) {
+    print(admin);
+  }
+
+  Map kitaplik = {
+    "ad": "Suç ve Ceza",
+    "yayinevi": "İş Bankası Kültür Yayınları",
+    "ilkYayinYili": 1866,
+    "puan": 4.8,
+    "fiyat": 189.90,
+  };
+
+  List<Map> ogrenciler = [
+    {
+      "isim": "Tolga",
+      "soyisim": "Tuna",
+      "yas": 14,
+      "admin": false,
+      "notlar": [90, 95, 88],
+    },
+    {
+      "isim": "İzel",
+      "soyisim": "Tuna",
+      "yas": 16,
+      "admin": false,
+      "notlar": [78, 95, 99],
+    },
+  ];
+}
