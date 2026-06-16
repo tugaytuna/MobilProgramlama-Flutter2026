@@ -1,0 +1,8 @@
+Kurulumlar yapıldı.
+
+https://docs.flutter.dev/install/quick
+
+
+https://docs.flutter.dev/install/manual
+
+https://docs.flutter.dev/tools/editors
