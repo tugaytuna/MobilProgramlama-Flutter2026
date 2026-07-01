@@ -7,19 +7,19 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Yeni Örnek',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.yellow)),
-      home: const MyHomePage(title: '29 Haziran'),
+      title: 'Flutter Demo',
+      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      home: const MyHomePage(title: 'Yaş Kontrol'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
   final String title;
 
   @override
@@ -28,7 +28,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  TextEditingController text1controller = TextEditingController();
 
   void _incrementCounter() {
     setState(() {
@@ -38,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void butonTiklandi() {
     setState(() {
-      _counter = int.parse(text1controller.text);
+      _counter--;
     });
   }
 
@@ -53,28 +52,31 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: .center,
           children: [
-            const Text(
-              'You have pushed the button this many times:',
-              style: TextStyle(fontSize: 18, color: Colors.green),
-            ),
+            const Text('You have pushed the button this many times:'),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            TextField(
-              controller: text1controller,
-              decoration: InputDecoration(
-                labelText: 'Buraya kullanıcı adınızı giriniz...',
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  _counter--;
+                });
+              },
+              child: Text("Kaydet"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.red,
+                foregroundColor: Colors.white,
+                elevation: 8,
               ),
             ),
-            ElevatedButton(onPressed: butonTiklandi, child: Text("Kaydet")),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.favorite_border, color: Colors.red),
+        child: const Icon(Icons.add),
       ),
     );
   }
